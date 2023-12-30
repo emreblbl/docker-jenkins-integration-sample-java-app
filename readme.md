@@ -19,8 +19,9 @@ https://edwin.baculsoft.com/2020/07/building-containerized-images-on-openshift-4
 
 
 
-\\\ 
+## Port forwarding or Nodeport 
 
-Second comment 
-
-'''Third comment'
+kubectl port-forward service/sample-app-service 8080:80 -n sample
+Forwarding from 127.0.0.1:8080 -> 8080
+Forwarding from [::1]:8080 -> 8080
+Handling connection for 8080
